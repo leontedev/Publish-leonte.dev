@@ -36,7 +36,7 @@ let projects = Projects(items: [
           role: "Sole developer",
           appStore_link: [],
           technologies: ["SwiftUI", "Combine", "CoreData", "CloudKit", "IEX Cloud API"],
-          paragraphs: ["See your net worth at a glance, including all your investments and assets. Be it stocks, bonds, gold or other metals, cryptocurrencies, rent income & fixed assets.", "A good portfolio should include some rebalancing rules. Net Worthy makes it easy to keep track of the ratio between your asset classes and notify you only when you need to take action."]),
+          paragraphs: ["See your net worth at a glance. Stocks, bonds, gold or other metals, cryptocurrencies, rent income & fixed assets.", "A good investment portfolio should include some rebalancing rules. Net Worthy will make it easy to keep track of the ratios between your different asset classes and notify you only when you need to take action."]),
     
     .init(name: "Locally",
           code: "locally",
@@ -48,7 +48,7 @@ let projects = Projects(items: [
           role: "Sole developer",
           appStore_link: ["https://apps.apple.com/us/app/id1488488997"],
           technologies: ["SwiftUI", "UIKit", "Combine", "CoreData", "CloudKit", "MapKit", "Deep Linking"],
-          paragraphs: ["Locally brings together all the navigation apps that you use.", "Store your favorite locations in Locally and quickly jump into your preferred app & transit type."]),
+          paragraphs: ["Locally brings together the most popular navigation apps that you use. Maps by Apple, Google Maps, Waze, Uber, Lyft.", "Store your favorite locations in Locally and when it's time to go, select the transit type and quickly jump into your preferred navigation app."]),
     
     .init(name: "Timely HN",
           code: "timely",
