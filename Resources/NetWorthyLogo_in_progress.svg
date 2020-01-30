@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="90px" height="90px" viewBox="0 0 90 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>App Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.0895772,-1.59727351e-15 L42.9104228,6.90439374e-16 C48.8528411,-4.0116516e-16 51.0077056,0.618729126 53.1801649,1.78057308 C55.3526242,2.94241704 57.057583,4.64737582 58.2194269,6.81983513 C59.3812709,8.99229444 60,11.1471589 60,17.0895772 L60,42.9104228 C60,48.8528411 59.3812709,51.0077056 58.2194269,53.1801649 C57.057583,55.3526242 55.3526242,57.057583 53.1801649,58.2194269 C51.0077056,59.3812709 48.8528411,60 42.9104228,60 L17.0895772,60 C11.1471589,60 8.99229444,59.3812709 6.81983513,58.2194269 C4.64737582,57.057583 2.94241704,55.3526242 1.78057308,53.1801649 C0.618729126,51.0077056 7.9434019e-16,48.8528411 -1.36712706e-15,42.9104228 L4.60292916e-16,17.0895772 C-2.6744344e-16,11.1471589 0.618729126,8.99229444 1.78057308,6.81983513 C2.94241704,4.64737582 4.64737582,2.94241704 6.81983513,1.78057308 C8.99229444,0.618729126 11.1471589,9.28061909e-16 17.0895772,-1.59727351e-15 Z" id="path-1"></path>
+        <filter x="-37.5%" y="-37.5%" width="175.0%" height="175.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.1870777%" id="linearGradient-4">
+            <stop stop-color="#B1B1B1" offset="0%"></stop>
+            <stop stop-color="#558490" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iOS-App-Icon-Template" transform="translate(-448.000000, -640.000000)">
+            <g id="App-Icon" transform="translate(463.000000, 655.000000)">
+                <g>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Mask" fill="black" fill-opacity="1">
+                        <use filter="url(#filter-3)" xlink:href="#path-1"></use>
+                    </g>
+                    <g id="Icon" mask="url(#mask-2)">
+                        <rect id="Background" fill="url(#linearGradient-4)" fill-rule="evenodd" opacity="0.622465588" x="0" y="0" width="60" height="60"></rect>
+                        <text id="%" opacity="0.622465588" font-family="AvenirNext-Medium, Avenir Next" font-size="18.75" font-weight="400" letter-spacing="0.422149189" fill="#FFFFFF">
+                            <tspan x="22.03125" y="36.6953125">%</tspan>
+                        </text>
+                        <ellipse id="Oval" stroke="#887F7F" stroke-width="2.578125" fill-opacity="0" fill="#D8D8D8" fill-rule="evenodd" opacity="0.622465588" stroke-linecap="round" transform="translate(30.058594, 29.882812) rotate(180.000000) translate(-30.058594, -29.882812) " cx="30.0585938" cy="29.8828125" rx="17.1679688" ry="16.5234375"></ellipse>
+                        <path d="M30.0585938,46.40625 C39.5402011,46.40625 47.2265625,39.008455 47.2265625,29.8828125 C47.2265625,20.75717 39.5402011,13.359375 30.0585938,13.359375 C20.5769864,13.359375 12.890625,20.75717 12.890625,29.8828125 C12.890625,39.008455 20.5769864,46.40625 30.0585938,46.40625 Z" id="Oval" stroke="#FFFFFF" stroke-width="3.8671875" fill-opacity="0" fill="#D8D8D8" fill-rule="evenodd" opacity="0.622465588" stroke-linecap="round" stroke-dasharray="90.234375" transform="translate(30.058594, 29.882812) rotate(180.000000) translate(-30.058594, -29.882812) "></path>
+                        <rect id="Rectangle" fill="#0C0101" fill-rule="evenodd" x="-2.4609375" y="36.9140625" width="65.15625" height="15.1171875"></rect>
+                        <text id="In-Progress" font-family="HelveticaNeue-Bold, Helvetica Neue" font-size="8.7890625" font-weight="bold" letter-spacing="0.197882429" fill="#FFFFFF">
+                            <tspan x="5.0390625" y="47.203125">In Progress</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
