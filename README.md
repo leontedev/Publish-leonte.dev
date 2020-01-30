@@ -1,8 +1,14 @@
-# SwiftUI Project
+# Leonte.dev Publish project
 
-**Project description.**
+**Publish is a static site generator for Swift written by John Sundell.**
 
-![](gif.gif)
+You can read a short article on how to get started here: https://www.leonte.dev/articles/build-static-website-swift-john-sundell-publish/
+
+![](screen.png)
 
 #### Technologies used:
-- SwiftUI
+- Swift
+- Publish: https://github.com/johnsundell/publish
+- Ink: https://github.com/johnsundell/ink
+- Plot: https://github.com/johnsundell/plot
+- Splash: https://github.com/johnsundell/splash
