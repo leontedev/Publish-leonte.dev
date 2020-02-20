@@ -41,4 +41,4 @@ struct Leontedev: Website {
 
 You'll also want to create your own theme. I made a copy of the theme that comes built-in and worked on that one.
 
-You can get inspiration from my own implementation: https://github.com/leontedev/Publish-leonte.dev
+You can get inspiration from my own implementation: [https://github.com/leontedev/Publish-leonte.dev](https://github.com/leontedev/Publish-leonte.dev)

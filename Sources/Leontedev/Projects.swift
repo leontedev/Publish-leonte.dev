@@ -17,6 +17,7 @@ struct Project {
     let videoFile: String
     let role: String // My Role
     let appStore_link: [String]
+    let gitHub_link: String
     let technologies: [String]
     let paragraphs: [String] // Description
 }
@@ -35,8 +36,9 @@ let projects = Projects(items: [
           videoFile: "mock_NetWorthy.mp4",
           role: "Sole developer",
           appStore_link: [],
+          gitHub_link: "",
           technologies: ["SwiftUI", "Combine", "CoreData", "CloudKit", "IEX Cloud API"],
-          paragraphs: ["See your net worth at a glance. Stocks, bonds, gold or other metals, cryptocurrencies, rent income & fixed assets.", "A good investment portfolio should include some rebalancing rules. Net Worthy will make it easy to keep track of the ratios between your different asset classes and notify you only when you need to take action."]),
+          paragraphs: ["See your net worth at a glance. Stocks, bonds, gold or other metals, cryptocurrencies, rent income & fixed assets.", "A good investment portfolio should include rebalancing rules. Net Worthy will make it easy to keep track of the ratios between your different asset classes and notify you only when you need to take action."]),
     
     .init(name: "Locally",
           code: "locally",
@@ -47,6 +49,7 @@ let projects = Projects(items: [
           videoFile: "mock_Locally.mp4",
           role: "Sole developer",
           appStore_link: ["https://apps.apple.com/us/app/id1488488997"],
+          gitHub_link: "",
           technologies: ["SwiftUI", "UIKit", "Combine", "CoreData", "CloudKit", "MapKit", "Deep Linking"],
           paragraphs: ["Locally brings together the most popular navigation apps that you use. Maps by Apple, Google Maps, Waze, Uber, Lyft.", "Store your favorite locations in Locally and when it's time to go, select the transit type and quickly jump into your preferred navigation app."]),
     
@@ -59,6 +62,7 @@ let projects = Projects(items: [
           videoFile: "mock_Timely.mp4",
           role: "Sole developer",
           appStore_link: ["https://apps.apple.com/us/app/id1389959690"],
+          gitHub_link: "",
           technologies: ["UIKit", "Codable", "Storyboards", "Programmatic UI", "Algolia API", "DTFoundation API"],
           paragraphs: ["I wanted a better Hacker News reader experience for myself. The main feature is keeping track of the stories which were already read or simply seen, in order to filter them from the news feed.", "Besides the HN official API the app also implements the Algolia API - which offers the possibility to create custom time periods for the feeds."]),
     
@@ -71,6 +75,7 @@ let projects = Projects(items: [
           videoFile: "mock_GoT_v2.mp4",
           role: "Developer in a team of two. My focus was on the UX implementation and map creation.",
           appStore_link: ["https://apps.apple.com/us/app/got-map-recap/id1105547119"],
+          gitHub_link: "",
           technologies: ["Unity", "SQLite", "Vector graphics", "Web scraping"],
           paragraphs: ["A companion app for both the 'Game of Thrones' TV show and George R.R. Martin's original book series.",
                        "The recap feature includes full synopsis and scene transcripts for each TV episode. While the book recap is very handy while reading the book - to keep track of where the action takes places and the characters involved.",
