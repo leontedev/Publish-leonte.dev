@@ -786,3 +786,14 @@ pre code .preprocessing {
 a.rss {
     text-decoration: underline;
 }
+
+a.browse-all {
+    color: var(--header-color);
+    font-weight: bold;
+    float: right;
+    line-height: 1em;
+}
+
+a.browse-all:hover {
+    text-decoration: underline;
+}

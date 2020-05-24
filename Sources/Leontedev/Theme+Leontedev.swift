@@ -47,17 +47,44 @@ private struct LeontedevHTMLFactory<Site: Website>: HTMLFactory {
                     .class("wrapper content clearfix"),
                     .div(
                         .class("section-header float-container"),
-                        .h1("🚀 Latest articles")
+                        .a(
+                            .href("/articles"),
+                            .h1("🚀 Latest articles")
+                        )
                     ),
                     .itemList(
-                        for: context.allItems(
-                            sortedBy: \.date,
-                            order: .descending
-                        ),
+                        for: Array(context.allItems(sortedBy: \.date, order: .descending).filter { $0.sectionID.rawValue == "articles" }.prefix(3)),
                         on: context.site
+                    ),
+                    .a(
+                        .class("browse-all"),
+                        .href("/articles"),
+                        .text("Browse all \(context.allItems(sortedBy: \.date, order: .descending).filter { $0.sectionID.rawValue == "articles" }.count) articles")
                     )
                 ),
                 
+                // Notes
+                .div(
+                    .class("wrapper content clearfix"),
+                    .div(
+                        .class("section-header float-container"),
+                        .a(
+                            .href("/notes"),
+                            .h1("📒 Latest notes")
+                        )
+                    ),
+                    .itemList(
+                        for: Array(context.allItems(sortedBy: \.date, order: .descending).filter { $0.sectionID.rawValue == "notes" }.prefix(3)),
+                        on: context.site
+                    ),
+                    .a(
+                        .class("browse-all"),
+                        .href("/notes"),
+                        .text("Browse all \(context.allItems(sortedBy: \.date, order: .descending).filter { $0.sectionID.rawValue == "notes" }.count) notes")
+                    )
+                ),
+                
+                .br(),
                 .br(),
                 .br(),
                 
@@ -88,8 +115,12 @@ private struct LeontedevHTMLFactory<Site: Website>: HTMLFactory {
             .body(
                 .header(for: context, selectedSection: section.id),
                 .wrapper(
-                    .h2(.text(section.title)),
-                    .itemList(for: section.items, on: context.site)
+                    .h1(.text(section.title)),
+                    .div(
+                        .class("introduction"),
+                        .text(section.id.rawValue == "articles" ? "Long form articles about iOS Development, including Swift programming techniques, UX experimentation in SwiftUI and Sketch prototyping & design." : "My collection of Zettelkasten type notes. These are ever-evolving drafts, with information which might not be relevant to everyone. The Zettelkasten method is about optimizing a workflow of learning and producing knowledge.")
+                    ),
+                    .itemList(for: section.items.filter { $0.sectionID == section.id }, on: context.site)
                 ),
                 .footer(for: context.site)
             )

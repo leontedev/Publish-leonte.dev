@@ -8,7 +8,7 @@ struct Leontedev: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
         case articles
-        //case projects
+        case notes
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
@@ -26,20 +26,6 @@ struct Leontedev: Website {
 
 let colorsReplacement = StringReplace(
     replacements: [
-//        (source: "website-background-color",         target: "#f9f7f7"), // https://colorhunt.co/palette/22272
-//        (source: "website-content-background-color", target: "#dbe2ef"),
-//        (source: "website-text-color",               target: "#112d4e"),
-//        (source: "header-color",                     target: "#dbe2ef"),
-//        (source: "navigation-items-color",           target: "#3f72af"), // albastru inchis
-//        (source: "navigation-items-text-color",      target: "#f9f7f7"), // aproape alb
-        
-//        (source: "website-background-color",         target: "#f5f7f2"), // https://colorhunt.co/palette/7642
-//        (source: "website-content-background-color", target: "#eaffd0"),
-//        (source: "website-text-color",               target: "#000000"),
-//        (source: "header-color",                     target: "#95e1d3"),
-//        (source: "navigation-items-color",           target: "#000000"),
-//        (source: "navigation-items-text-color",      target: "#eaffd0"),
-        
         (source: "website-background-color",         target: "#ffffff"), //
         (source: "website-content-background-color", target: "#ececeb"), // chenare
         (source: "website-text-color",               target: "#000000"),
@@ -71,7 +57,10 @@ let colorsReplacement = StringReplace(
 
 try Leontedev().publish(
     using: [
-        .installPlugin(.splash(withClassPrefix: "")), 
+        .installPlugin(.splash(withClassPrefix: "")),
+        //.moveZettelkastenToNotes(),
+        //.rewriteMarkdownLinks(),
+        
         .copyResources(),
         .addMarkdownFiles(),
         //.sortItems(by: \.date, order: .descending),
@@ -79,6 +68,8 @@ try Leontedev().publish(
         .stringReplace(colorsReplacement),
         .generateRSSFeed(including: [.articles]),
         .generateSiteMap(),
+        //.deleteNotes()
+        
         //.unwrap(.gitHub("ncreated/ncreated.github.io", useSSH: true), PublishingStep.deploy)
     ]
 )
